@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form class="contactForm" action="">
+        <legend>Envianos tus comentarios</legend>
+        <input type="text" name="name" title="este campo solo acepta letras" placeholder="Nombre completo" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required>
+        <input type="mail" name="email" title="este campo solo acepta correos validos" placeholder="Email" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="asunto" placeholder="Asunto" required>
+        <textarea title="superaste los 255 caracteres" name="comentario" cols="30" rows="10" placeholder="Escribe tus comentarios" data-pattern="^.{1,255}$" required></textarea>
+        <input type="submit" value="Enviar" id="btnSubmit">
+    </form>
+    <div class="none" id="loader">
+        <img class="load" src="./tail-spin.svg" alt="">
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
