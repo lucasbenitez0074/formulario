@@ -24,7 +24,7 @@ document.addEventListener("keyup",(e)=>{
 }})
 
 document.addEventListener("submit",(e)=>{
-    e.preventDefault()
+    
     const $loader = document.getElementById("loader")
     $loader.classList.add("loaderContainer")
     setTimeout(()=>{
